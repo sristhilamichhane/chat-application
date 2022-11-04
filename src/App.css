@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.fromContainer {
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fromWrapper {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    color: #5d5b8d;
+    font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.fromContainer .fromWrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fromContainer .fromWrapper form input {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #a7bcff;
+    width: 250px;
+}
+
+.fromContainer .fromWrapper form input ::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.fromContainer .fromWrapper form button {
+    background-color: #7b96ec;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
 }
