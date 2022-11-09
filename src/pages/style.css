@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1024px) {
+    .container header .header-nav-area #nav_container {
+        display: flex;
+    }
+}
+
 .fromContainer {
     background-color: #a7bcff;
     height: 100vh;
